@@ -5,8 +5,7 @@ extern char *get_cell_value();
 VALUE cget_cell_value(VALUE mod) {
   const char * val = get_cell_value();
 
-  //return rb_str_new_cstr(val);
-  return INT2FIX(3);
+  return rb_str_new_cstr(val);
 };
 
 static VALUE hello_world(VALUE mod) {
