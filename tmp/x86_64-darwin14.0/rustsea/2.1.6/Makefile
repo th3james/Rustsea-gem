@@ -120,8 +120,8 @@ TOUCH = exit >
 
 preload = 
 
-libpath = . $(libdir)
-LIBPATH =  -L. -L$(libdir)
+libpath = . $(libdir) /Users/th3james/src/curricular/rust/rustsea/rust/target/debug
+LIBPATH =  -L. -L$(libdir) -L/Users/th3james/src/curricular/rust/rustsea/rust/target/debug
 DEFFILE = 
 
 CLEANFILES = mkmf.log
@@ -132,7 +132,7 @@ extout =
 extout_prefix = 
 target_prefix = /rustsea
 LOCAL_LIBS = 
-LIBS =   -lpthread -ldl -lobjc 
+LIBS =  -lrust  -lpthread -ldl -lobjc 
 ORIG_SRCS = rustsea.c
 SRCS = $(ORIG_SRCS) 
 OBJS = rustsea.o
